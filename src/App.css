@@ -1,38 +1,195 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2{
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.picture{
+  margin-top: -50px;
+  width: 90px;
+  height: 90px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.post{
+    position: relative;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform .2s ease-in-out;
+    overflow: hidden;
+    animation: fadeInUp .6s;
+    width: 300px;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.title{
+  color: #fff;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.post:after {
+  content: linear-gradient(transparent,rgba(0,0,0,.6) 80%,rgba(0,0,0,.9));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.containerPost{
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  column-gap: 2vw;
+}
+
+.background{
+  background: url("https://images.unsplash.com/photo-1546900703-cf06143d1239?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 225px;
+  background-position: 50%;
+  border-radius: 10px;
+}
+
+header{
+  width: 100%;
+  max-width: 1280px;
   text-align: center;
+  margin-bottom: 30px;
+  margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name{
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.description {
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact{
+  background: #fff;
+  width: calc(100% - 60px);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  max-width: 400px;
+  position: static;
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 30px;
+}
+
+.link{
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 65px;
+  color: #000;
+  font-weight: 600;
+  font-size: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.portfolioItens{
+  background: #e1e1e1;
+  margin: 20px 0;
+  display: flex;
+  width:30em;
+  justify-content: space-evenly;
+  height: 43px;
+  margin: 0;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.item{
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: .3s ease-in-out;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  color: #818181;
+}
+
+.ativo{
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 800px)
+{
+  header{
+    margin-top: 0;
   }
-  to {
-    transform: rotate(360deg);
+ .containerPost{
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 15px;
+ }
+ .post{
+   margin-bottom: 15px;
+ }
+
+ .contact{
+   position: fixed;
+   top: calc(100vh - 75px);
+   z-index: 10;
+ }
+ .portfolioItens{
+   width: 20em;
+ }
+}
+
+@media (max-width: 400px){
+  .portfolioItens{
+    width: 15em;
+  }
+
+  .item{
+    font-size:11px
+  }
+
+  .post{
+    width: 200px;
   }
 }
