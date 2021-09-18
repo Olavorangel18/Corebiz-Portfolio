@@ -11,14 +11,14 @@ function Navegation(props) {
     ]
 
     let postProjetos = [
-        ["https://olavorangel18.github.io/","http://meuprimeirosite.org.br/images/bg-home.jpg","Meu Primeiro Site - JA"],
+        ["https://olavorangel18.github.io/","https://media-exp1.licdn.com/dms/image/C4E0BAQFoU0Y-i1hv7Q/company-logo_200_200/0/1588177428095?e=2159024400&v=beta&t=AG8Hy7NFLrpKaRnZ9lXdf9KM0BX4rykZ3ssTY_RIGk0","Meu Primeiro Site - JA"],
         ["https://cocky-wright-ace659.netlify.app/","https://enotas.com.br/blog/wp-content/uploads/2021/02/GitHub.jpg","CRV - Github Consult"],
         ["https://hiringcoders-blackfriday.herokuapp.com/","https://www.tercerize.com.br/wp-content/uploads/2019/11/como_criar_uma_landing_page.png","BlackFriday - LP"],
         ["https://silly-hamilton-db3959.netlify.app/", "https://i2.wp.com/raccoon.ag/wp-content/uploads/2020/10/Banner-2.jpg?ssl=1", "Raccon - Challenge"],
     ]
 
     let postCertificados = [
-        ["https://www.linkedin.com/in/olavoconceicao/","http://meuprimeirosite.org.br/images/bg-home.jpg","Meu Primeiro Site"],
+        ["https://www.linkedin.com/in/olavoconceicao/","https://media-exp1.licdn.com/dms/image/C4E0BAQFoU0Y-i1hv7Q/company-logo_200_200/0/1588177428095?e=2159024400&v=beta&t=AG8Hy7NFLrpKaRnZ9lXdf9KM0BX4rykZ3ssTY_RIGk0","Meu Primeiro Site"],
         ["https://www.linkedin.com/in/olavoconceicao/","https://br.cellep.com/wp-content/uploads/2020/11/shutterstock_1375976735.jpg","UX-UI"],
         ["https://www.linkedin.com/in/olavoconceicao/","https://vtex.com/wp-content/uploads/2021/05/Capa-blog-Hiring-Coders-2.jpeg","FullStack - Hiring Coders"],
         ["https://www.linkedin.com/in/olavoconceicao/","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHrIG2PeXvGJ-3r9CnoT_qvj95x9FkdbVICihPT0BEqr3PLGGjPct-rgo&s=10","VTEX - IO"],
